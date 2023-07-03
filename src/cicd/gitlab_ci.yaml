@@ -1,0 +1,33 @@
+stages:
+  - build
+  - test
+  - deploy
+
+variables:
+  USER_EMAIL: "user@example.com"
+  USER_CREDENTIALS: "secure_password"
+  DB_CONNECTION: "postgresql://user:password@localhost:5432/mydatabase"
+
+build:
+  stage: build
+  script:
+    - echo "Building the application..."
+    - docker build -t ai-scheduler-app -f src/docker/dockerfile1 .
+
+test:
+  stage: test
+  script:
+    - echo "Running tests..."
+    - python src/testing/tdd.py
+    - python src/testing/bdd.py
+
+deploy:
+  stage: deploy
+  script:
+    - echo "Deploying the application..."
+    - kubectl apply -f src/kubernetes/kube_config.yaml
+  environment:
+    name: production
+    url: http://production.example.com
+  only:
+    - master
