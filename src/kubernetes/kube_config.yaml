@@ -1,0 +1,70 @@
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ai-scheduling-assistant
+  labels:
+    app: ai-scheduling-assistant
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: ai-scheduling-assistant
+  template:
+    metadata:
+      labels:
+        app: ai-scheduling-assistant
+    spec:
+      containers:
+      - name: ai-scheduling-assistant
+        image: ai-scheduling-assistant:latest
+        ports:
+        - containerPort: 8080
+        env:
+        - name: USER_EMAIL
+          valueFrom:
+            secretKeyRef:
+              name: user-email-secret
+              key: email
+        - name: USER_CREDENTIALS
+          valueFrom:
+            secretKeyRef:
+              name: user-credentials-secret
+              key: credentials
+        - name: DB_CONNECTION
+          valueFrom:
+            secretKeyRef:
+              name: db-connection-secret
+              key: connection
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ai-scheduling-assistant
+spec:
+  selector:
+    app: ai-scheduling-assistant
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+---
+apiVersion: autoscaling/v2beta2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: ai-scheduling-assistant
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: ai-scheduling-assistant
+  minReplicas: 3
+  maxReplicas: 10
+  metrics:
+  - type: Resource
+    resource:
+      name: cpu
+      target:
+        type: Utilization
+        averageUtilization: 50
+```
