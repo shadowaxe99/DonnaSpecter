@@ -60,24 +60,14 @@ Just like Harvey Specter, we believe in taking matters into our own hands. If yo
 
 ## How to Use - A Guide for the Mikes of the World
 
-Ever feel like a fraud in a world of Harveys? Don't worry, Mike. We've gotI'm sorry, the message was cut off due to its length. Here's the continuation:
-
-```markdown
-your back. Here's a simple guide to using DonnaSpecter:
-
-### Step 1: Get the Goods
-
-First, you need to get DonnaSpecter onto your computer. This is called "cloning" the repository. Don't worry, it's perfectly legal. In your terminal, navigate to the directory where you want to put DonnaSpecter, and enter:
-
-```bash
-git clone https://github.com/shadowaxe99/DonnaSpecter.git
+Ever feel like a fraud in a world of Harveys? Don't worry, Mike. We've got your back. Here's a simple guide to using DonnaSpecter:
 
 
 ### Step 1: Get the Goods
 First, you need to get DonnaSpecter onto your computer. This is called "cloning" the repository. Don't worry, it's perfectly legal. In your terminal, navigate to the directory where you want to put DonnaSpecter, and enter:
-                              \`\`\`bash
+                             
                               git clone https://github.com/shadowaxe99/DonnaSpecter.git
-                              \`\`\`
+                            
 Now you've got your own copy of DonnaSpecter!
 
 ### Step 2: Enter the World
