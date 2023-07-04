@@ -72,12 +72,14 @@ Now you've got your own copy of DonnaSpecter!
 
 ### Step 2: Enter the World
 Navigate into the heart of the operation, the `src` directory. Just type:
+
                                 cd DonnaSpecter/src
 
 You're in.
 
 ### Step 3: Wake Donna Up
 Start the program by running the `main.py` script. This is like waking Donna up in the morning. Type:
+
           python main.py
 
 DonnaSpecter should now be running and ready to assist you.
