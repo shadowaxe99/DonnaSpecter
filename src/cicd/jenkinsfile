@@ -1,0 +1,61 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git 'https://github.com/your-repo/ai-scheduling-assistant.git'
+            }
+        }
+
+        stage('Install Dependencies') {
+            steps {
+                sh 'pip install -r requirements.txt'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                sh 'python -m unittest discover -s src/testing -p "*_test.py"'
+            }
+        }
+
+        stage('Build Docker Images') {
+            steps {
+                sh 'docker build -t ai-scheduling-assistant:latest -f src/docker/dockerfile1 .'
+                sh 'docker build -t ai-scheduling-assistant-service:latest -f src/docker/dockerfile2 .'
+            }
+        }
+
+        stage('Deploy to Kubernetes') {
+            steps {
+                sh 'kubectl apply -f src/kubernetes/kube_config.yaml'
+            }
+        }
+    }
+
+    post {
+        always {
+            notifyBuild(currentBuild.result)
+        }
+    }
+}
+
+def notifyBuild(String buildStatus = 'STARTED') {
+    buildStatus = buildStatus ?: 'SUCCESSFUL'
+
+    def colorName = buildStatus == 'SUCCESSFUL' ? 'green' : buildStatus == 'FAILURE' ? 'red' : 'yellow'
+    def colorCode = buildStatus == 'SUCCESSFUL' ? '#00FF00' : buildStatus == 'FAILURE' ? '#FF0000' : '#FFFF00'
+    def subject = "${buildStatus}: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'"
+    def summary = "${subject} (${env.BUILD_URL})"
+    def details = """<p>STARTED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]':</p>
+        <p>Check console output at &QUOT;<a href='${env.BUILD_URL}'>${env.JOB_NAME} [${env.BUILD_NUMBER}]</a>&QUOT;</p>"""
+
+    emailext (
+        subject: subject,
+        body: details,
+        recipientProviders: [[$class: 'DevelopersRecipientProvider']],
+        attachLog: true,
+        mimeType: 'text/html'
+    )
+}
