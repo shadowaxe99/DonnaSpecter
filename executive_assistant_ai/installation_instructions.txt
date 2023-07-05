@@ -1,0 +1,32 @@
+# Installation Instructions for Executive Assistant AI
+
+1. Ensure you have Python 3.7 or later installed on your system. You can download it from https://www.python.org/downloads/
+
+2. Clone the repository from GitHub:
+```
+git clone https://github.com/yourusername/executive_assistant_ai.git
+```
+
+3. Navigate to the cloned repository:
+```
+cd executive_assistant_ai
+```
+
+4. Install the required dependencies:
+```
+pip install -r requirements.txt
+```
+
+5. Run the setup file to configure the application:
+```
+python setup.py
+```
+
+6. To start the application, run the main file:
+```
+python main.py
+```
+
+7. Follow the prompts to interact with the AI assistant.
+
+Note: For detailed usage instructions and feature descriptions, please refer to the README.md file in the repository.
