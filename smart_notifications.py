@@ -1,4 +1,3 @@
-```python
 import json
 from datetime import datetime
 from ai_assistant.email_notifications import send_email
@@ -39,4 +38,3 @@ def generate_push_content(meeting):
 
 if __name__ == "__main__":
     notifySmartly()
-```

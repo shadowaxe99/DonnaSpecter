@@ -1,4 +1,4 @@
-```python
+ 
 from django.shortcuts import render
 from django.http import JsonResponse
 from .models import User, Task, Email
@@ -46,4 +46,4 @@ def connectToDB(request):
         return JsonResponse({"message": "Database connected"}, status=200)
     else:
         return JsonResponse({"message": "Database connection failed"}, status=500)
-```
+  

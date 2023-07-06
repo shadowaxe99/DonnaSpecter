@@ -1,4 +1,3 @@
-```python
 import googleapiclient.discovery
 from google.oauth2 import service_account
 
@@ -58,4 +57,3 @@ google_meet = GoogleMeet(user_profile, meeting_data)
 
 # Create a Google Meet event
 google_meet_link = google_meet.create_google_meet()
-```

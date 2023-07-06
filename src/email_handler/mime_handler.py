@@ -1,4 +1,4 @@
-```python
+ 
 import email
 from email import policy
 from email.parser import BytesParser
@@ -32,4 +32,4 @@ def handleEmail(raw_email):
 def processUserEmail(subject, body):
     # TODO: Implement user email processing logic
     pass
-```
+  

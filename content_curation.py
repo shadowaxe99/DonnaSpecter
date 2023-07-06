@@ -1,4 +1,3 @@
-```python
 import os
 import json
 from ai_assistant.shared_dependencies import user_profile, content_data
@@ -33,4 +32,3 @@ if __name__ == "__main__":
     content_curation.save_curated_content(curated_content)
     loaded_content = content_curation.load_curated_content()
     print(loaded_content)
-```

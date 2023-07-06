@@ -1,4 +1,4 @@
-```python
+ 
 from behave import given, when, then
 from src.ai_model.gpt4 import GPT4Model
 from src.email_handler.mime_handler import MimeHandler
@@ -59,4 +59,4 @@ def step_then_user_data_should_be_secure(context):
 @then('the database should be updated')
 def step_then_database_should_be_updated(context):
     assert context.postgresql.updated or context.mongodb.updated
-```
+  

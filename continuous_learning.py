@@ -1,4 +1,3 @@
-```python
 import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
@@ -58,4 +57,3 @@ if __name__ == "__main__":
     learning_progress = pd.read_csv('learning_progress.csv')
     continuous_learning = ContinuousLearning(user_profile, learning_progress)
     continuous_learning.run()
-```

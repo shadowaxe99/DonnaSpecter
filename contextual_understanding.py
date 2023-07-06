@@ -1,4 +1,3 @@
-```python
 import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize, sent_tokenize
@@ -38,4 +37,3 @@ def get_context(user_id):
     user_meetings = [meeting for meeting in meeting_data if meeting['user_id'] == user_id]
     user_context = [meeting['context'] for meeting in user_meetings]
     return user_context
-```

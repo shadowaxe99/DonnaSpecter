@@ -1,4 +1,3 @@
-```python
 import networkx as nx
 from ai_assistant.meeting_data import MeetingSchema
 
@@ -40,4 +39,3 @@ if __name__ == "__main__":
     print(f"Most connected participant: {pna.get_most_connected_participant()}")
     print(f"Least connected participant: {pna.get_least_connected_participant()}")
     print(f"Suggested connections for participant 'John Doe': {pna.get_suggested_connections('John Doe')}")
-```

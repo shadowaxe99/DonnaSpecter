@@ -1,4 +1,4 @@
-```python
+ 
 import datetime
 from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
@@ -70,4 +70,4 @@ def scheduleTask(task):
 
     event = service.events().insert(calendarId='primary', body=event).execute()
     print('Event created: %s' % (event.get('htmlLink')))
-```
+  

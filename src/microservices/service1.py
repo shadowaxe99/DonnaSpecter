@@ -1,4 +1,4 @@
-```python
+ 
 from flask import Flask, request
 from src.ai_model.gpt4 import process_query
 from src.email_handler.mime_handler import handle_email
@@ -51,4 +51,4 @@ if __name__ == '__main__':
     # Connect to the database
     connect_db()
     app.run(host='0.0.0.0', port=5000)
-```
+  

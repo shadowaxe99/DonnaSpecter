@@ -1,4 +1,4 @@
-```python
+ 
 import os
 import requests
 from datetime import datetime
@@ -68,4 +68,4 @@ def schedule_task(task):
         print(f"Task '{task['subject']}' has been scheduled successfully.")
     else:
         print(f"Failed to schedule task '{task['subject']}'. Error: {response.text}")
-```
+  

@@ -1,4 +1,4 @@
-```python
+ 
 import datetime
 from geopy.distance import geodesic
 from ai_assistant.scheduler import schedule
@@ -33,5 +33,6 @@ class TravelPlanner:
         for meeting in self.schedule.get_meetings():
             if not self.plan_travel(meeting):
                 self.schedule.reschedule_meeting(meeting)
-```
+"""
 This Python code defines a `TravelPlanner` class that uses the user's location and the meeting's location to calculate travel time and update the schedule accordingly. It uses the geopy library to calculate the distance between two locations and assumes an average speed of 60 miles per hour. If there is not enough time to travel to a meeting, the meeting is rescheduled.
+"""

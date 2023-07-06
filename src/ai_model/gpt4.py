@@ -1,4 +1,4 @@
-```python
+ 
 import torch
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
 
@@ -24,4 +24,4 @@ def scheduleTask(task):
     task_description = task['description']
     response = gpt4.generate_response(task_description)
     return response
-```
+  

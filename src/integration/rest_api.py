@@ -1,4 +1,4 @@
-```python
+ 
 from flask import Flask, request, jsonify
 from src.ai_model import gpt4
 from src.email_handler import mime_handler
@@ -30,4 +30,4 @@ def handle_query():
 
 if __name__ == '__main__':
     app.run(debug=True)
-```
+  

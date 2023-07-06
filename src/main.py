@@ -1,4 +1,3 @@
-```python
 import os
 from ai_model import gpt4
 from email_handler import mime_handler
@@ -83,4 +82,3 @@ while True:
         # Schedule the task
         google_scheduler.schedule_task(task)
         microsoft_scheduler.schedule_task(task)
-```

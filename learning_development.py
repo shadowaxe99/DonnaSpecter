@@ -1,4 +1,3 @@
-```python
 import datetime
 from ai_assistant.shared_dependencies import UserProfileSchema, LearningSchema
 
@@ -37,4 +36,3 @@ class LearningDevelopment:
             'goals': self.learning_data.goals,
             'recommended_path': self.recommend_learning_path()
         }
-```

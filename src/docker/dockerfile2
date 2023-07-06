@@ -1,4 +1,4 @@
-```Dockerfile
+  Dockerfile
 # Use an official Python runtime as a parent image
 FROM python:3.8-slim-buster
 
@@ -21,4 +21,4 @@ ENV DB_CONNECTION=postgresql://user:password@localhost:5432/mydatabase
 
 # Run main.py when the container launches
 CMD ["python", "src/main.py"]
-```
+  

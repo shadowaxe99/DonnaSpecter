@@ -1,4 +1,3 @@
-```python
 import os
 from dotenv import load_dotenv
 from productivity_tools import Todoist, Trello, Asana
@@ -26,4 +25,3 @@ def integrateProductivityTool(user_profile, task_list):
             asana.create_task(task['title'], task['due_date'])
     else:
         print("Unsupported productivity tool.")
-```

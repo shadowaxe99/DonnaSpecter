@@ -1,4 +1,4 @@
-```python
+ 
 from pymongo import MongoClient
 from src.security.encryption import decryptData
 
@@ -80,4 +80,4 @@ def delete_task(email, description):
 
 def delete_email(email, subject):
     emails.delete_one({"user_email": email, "subject": subject})
-```
+  

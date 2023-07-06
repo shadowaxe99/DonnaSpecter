@@ -1,4 +1,3 @@
-```python
 import pandas as pd
 from datetime import datetime
 from ai_assistant.shared_dependencies import meeting_data
@@ -44,4 +43,3 @@ class MeetingAnalytics:
             'average_participants': average_participants,
             'meeting_frequency': meeting_frequency
         }
-```

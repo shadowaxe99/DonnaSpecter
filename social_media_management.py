@@ -1,4 +1,3 @@
-```python
 import os
 from social_media_api import SocialMediaAPI
 
@@ -58,4 +57,3 @@ if __name__ == "__main__":
     user_profile = UserProfileSchema.load(os.getenv('USER_PROFILE_PATH'))
     manager = SocialMediaManager(user_profile)
     manager.manage_social_media()
-```

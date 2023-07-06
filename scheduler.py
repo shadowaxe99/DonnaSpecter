@@ -1,4 +1,3 @@
-```python
 import datetime
 from ai_assistant.zoom_invites import zoomInvite
 from ai_assistant.google_meets import googleMeet
@@ -26,4 +25,3 @@ class Scheduler:
             if start <= meeting_end and meeting_start <= end:
                 return False
         return True
-```

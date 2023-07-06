@@ -1,4 +1,3 @@
-```python
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
@@ -43,4 +42,3 @@ class EmailManager:
     def manage_drafts(self):
         # This function can be expanded to include logic for managing drafts
         pass
-```

@@ -1,4 +1,4 @@
-```python
+ 
 from flask import Flask
 from flask_graphql import GraphQLView
 from graphene import ObjectType, String, Schema
@@ -24,4 +24,4 @@ app.add_url_rule('/graphql', view_func=GraphQLView.as_view('graphql', schema=sch
 
 if __name__ == '__main__':
     app.run()
-```
+  

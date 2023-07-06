@@ -1,4 +1,3 @@
-```python
 import speech_recognition as sr
 
 class VoiceRecognition:
@@ -39,5 +38,6 @@ if __name__ == "__main__":
         command = vr.listen()
         if command:
             vr.recognize_voice(command)
-```
+"""
 This Python script uses the SpeechRecognition library to listen to the user's voice and convert it into text. It then checks if the text contains certain keywords and calls the corresponding function from the appropriate file. If the command is not recognized, it prints a message to the user. The script runs in an infinite loop, continuously listening for commands.
+"""

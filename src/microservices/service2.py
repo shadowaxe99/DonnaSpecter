@@ -1,4 +1,4 @@
-```python
+ 
 import os
 from flask import Flask, request
 from src.ai_model.gpt4 import process_query
@@ -32,4 +32,4 @@ def handle_query():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 8080)))
-```
+  

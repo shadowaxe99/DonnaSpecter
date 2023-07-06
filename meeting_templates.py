@@ -1,4 +1,3 @@
-```python
 import json
 
 class MeetingTemplate:
@@ -63,4 +62,3 @@ class MeetingTemplatesManager:
         template = self.get_template(template_id)
         if template is not None:
             self.templates.remove(template)
-```

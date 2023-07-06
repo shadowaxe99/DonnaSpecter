@@ -1,4 +1,3 @@
-```python
 import requests
 from shared_dependencies import user_profile, meeting_data
 
@@ -27,4 +26,3 @@ class LanguageTranslation:
 
 language_translation = LanguageTranslation()
 translated_meeting_data = language_translation.translate_meeting_data()
-```

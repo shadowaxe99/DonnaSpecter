@@ -1,4 +1,3 @@
-```python
 import pandas as pd
 from sklearn.cluster import KMeans
 from ai_assistant.availability_analysis import checkAvailability
@@ -32,4 +31,3 @@ def recommendMeeting(user_profile, meeting_data):
     recommended_meeting = min(cluster_centers, key=lambda x: abs(x[0] - user_profile['availability']))
 
     return recommended_meeting
-```

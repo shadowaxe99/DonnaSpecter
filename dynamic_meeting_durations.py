@@ -1,4 +1,3 @@
-```python
 import datetime
 from ai_assistant.meeting_analytics import analyzeMeeting
 
@@ -36,4 +35,3 @@ def dynamicDuration(meeting_data):
     adjusted_meetings = adjustDuration(meeting_data)
 
     return adjusted_meetings
-```

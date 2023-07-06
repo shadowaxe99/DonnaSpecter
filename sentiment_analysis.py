@@ -1,4 +1,3 @@
-```python
 import nltk
 from nltk.sentiment import SentimentIntensityAnalyzer
 
@@ -33,4 +32,3 @@ meeting_sentiment = sentiment_analysis.analyze_meeting_sentiment('meeting123')
 
 # Analyze sentiment for a specific user
 user_sentiment = sentiment_analysis.analyze_user_sentiment('user123')
-```

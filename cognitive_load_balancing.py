@@ -1,4 +1,3 @@
-```python
 import datetime
 from ai_assistant.scheduler import schedule
 from ai_assistant.task_automation import task_list
@@ -34,4 +33,3 @@ def updateLoadBalancing(user_profile, meeting_data, task_list):
     balanceLoad(user_profile, meeting_data, task_list)
 
     return user_profile
-```

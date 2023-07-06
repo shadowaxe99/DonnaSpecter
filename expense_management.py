@@ -1,4 +1,3 @@
-```python
 import pandas as pd
 from datetime import datetime
 
@@ -40,4 +39,3 @@ if __name__ == "__main__":
     expense_manager.load_expenses()
     expense_manager.categorize_expenses()
     expense_manager.alert_if_over_budget()
-```

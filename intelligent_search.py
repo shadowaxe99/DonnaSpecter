@@ -1,4 +1,3 @@
-```python
 import re
 from collections import defaultdict
 from ai_assistant.shared_dependencies import user_profile, meeting_data, search_queries
@@ -43,4 +42,3 @@ def handle_search_query():
 
 if __name__ == "__main__":
     handle_search_query()
-```

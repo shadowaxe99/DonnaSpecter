@@ -1,4 +1,4 @@
-```javascript
+  javascript
 import Vue from 'vue'
 import axios from 'axios'
 
@@ -32,4 +32,4 @@ new Vue({
     </div>
   `
 });
-```
+  

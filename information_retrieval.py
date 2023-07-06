@@ -1,4 +1,3 @@
-```python
 import json
 from ai_assistant.shared_dependencies import user_profile, search_queries
 
@@ -57,4 +56,3 @@ class InformationRetrieval:
         """
         with open('user_profile.json', 'r') as f:
             self.user_profile = json.load(f)
-```

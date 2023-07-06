@@ -1,4 +1,4 @@
-```python
+ 
 import os
 from oauthlib.oauth2 import BackendApplicationClient
 from requests_oauthlib import OAuth2Session
@@ -31,4 +31,4 @@ def oauth2_authenticate():
         print("Authentication failed")
 
 oauth2_authenticate()
-```
+  

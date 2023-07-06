@@ -1,4 +1,3 @@
-```python
 import datetime
 from ai_assistant.scheduler import schedule
 
@@ -30,4 +29,3 @@ def suggest_times(user_profile, duration, num_suggestions=5):
     """
     free_slots = find_free_slots(user_profile, duration)
     return free_slots[:num_suggestions]
-```

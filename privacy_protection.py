@@ -1,4 +1,3 @@
-```python
 import os
 from cryptography.fernet import Fernet
 
@@ -23,5 +22,6 @@ class PrivacyProtection:
     def unprotect_user_profile(self, encrypted_profile):
         decrypted_profile = {key: self.decrypt_data(value) for key, value in encrypted_profile.items()}
         return decrypted_profile
-```
+"""
 This Python code creates a class `PrivacyProtection` that uses symmetric encryption to protect user data. The encryption key is stored as an environment variable for security. The `encrypt_data` and `decrypt_data` methods are used to encrypt and decrypt data respectively. The `protect_user_profile` and `unprotect_user_profile` methods are used to encrypt and decrypt the user profile data.
+"""

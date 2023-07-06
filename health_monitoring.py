@@ -1,4 +1,3 @@
-```python
 import datetime
 from ai_assistant.shared_dependencies import user_profile, HealthSchema
 
@@ -30,5 +29,7 @@ def monitor_user_health():
     health_monitor = HealthMonitor(user_profile)
     health_monitor.monitor_health()
     return health_monitor.get_health_status()
-```
+
+"""
 This Python code creates a `HealthMonitor` class that tracks the user's health based on their sleep and exercise hours. The `monitor_health` method updates these hours based on the current time and the user's current task. The `update_health_status` method updates the user's health status based on their sleep and exercise hours. The `get_health_status` method returns the user's current health status. The `monitor_user_health` function creates a `HealthMonitor` object for the user and monitors their health.
+"""

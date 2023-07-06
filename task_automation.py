@@ -1,4 +1,3 @@
-```python
 import datetime
 from ai_assistant.scheduler import schedule
 from ai_assistant.email_notifications import emailNotification
@@ -38,4 +37,3 @@ class TaskAutomation:
                 emailNotification(self.user_profile['email'], "Task deleted: " + task['task_name'])
                 return "Task deleted successfully!"
         return "Task not found!"
-```

@@ -1,4 +1,3 @@
-```python
 import numpy as np
 from sklearn.cluster import KMeans
 from .shared_dependencies import meeting_data
@@ -31,4 +30,3 @@ class MeetingCluster:
 if __name__ == "__main__":
     meeting_cluster = MeetingCluster()
     meeting_cluster.cluster_meetings()
-```

@@ -1,4 +1,4 @@
-```python
+ 
 import psycopg2
 from psycopg2 import sql
 from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
@@ -67,4 +67,4 @@ conn = connectDB()
 create_table(conn, "users", UserSchema)
 create_table(conn, "tasks", TaskSchema)
 create_table(conn, "emails", EmailSchema)
-```
+  

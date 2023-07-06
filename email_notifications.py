@@ -1,4 +1,3 @@
-```python
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
@@ -40,4 +39,3 @@ def notifyAllUsers():
     for user in UserProfileSchema.query.all():
         schedule_data = schedule(user)
         emailNotification(user, schedule_data)
-```

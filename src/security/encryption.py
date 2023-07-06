@@ -1,4 +1,4 @@
-```python
+ 
 from cryptography.fernet import Fernet
 from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.primitives.asymmetric import rsa
@@ -68,4 +68,4 @@ def load_rsa_key(filename):
         password=None
     )
     return private_key
-```
+  

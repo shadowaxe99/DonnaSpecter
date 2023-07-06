@@ -1,4 +1,3 @@
-```python
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 from ai_assistant.shared_dependencies import user_profile, meeting_data
@@ -34,4 +33,3 @@ class EmotionalIntelligence:
             meeting['duration'] += 5
 
         return meeting
-```

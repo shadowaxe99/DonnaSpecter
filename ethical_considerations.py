@@ -1,4 +1,3 @@
-```python
 import json
 
 class EthicalConsiderations:
@@ -38,4 +37,3 @@ if __name__ == "__main__":
     ]
     ethical_considerations = EthicalConsiderations(user_profile)
     ethical_considerations.consider_ethics(meeting_data)
-```

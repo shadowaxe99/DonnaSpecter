@@ -1,4 +1,3 @@
-```python
 import hashlib
 from Crypto.Cipher import AES
 from Crypto.Random import get_random_bytes
@@ -36,4 +35,3 @@ class CyberSecurity:
             if key in self.security_settings.get('sensitive_data'):
                 decrypted_value = self.decrypt_data(value.get('encrypted_value'), value.get('tag'), value.get('nonce'))
                 self.user_profile[key] = decrypted_value
-```

@@ -1,4 +1,3 @@
-```python
 import json
 import requests
 from datetime import datetime
@@ -45,4 +44,3 @@ class ZoomInvite:
 
 zoom_invite = ZoomInvite(user_profile, meeting_data)
 zoom_link = zoom_invite.generate_zoom_invite()
-```

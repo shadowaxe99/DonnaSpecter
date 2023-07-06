@@ -1,4 +1,4 @@
-```yaml
+  yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -67,4 +67,4 @@ spec:
       target:
         type: Utilization
         averageUtilization: 50
-```
+  

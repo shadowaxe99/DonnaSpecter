@@ -1,4 +1,3 @@
-```python
 import os
 import json
 from ai_assistant.shared_dependencies import user_profile, meeting_data, notification_settings, task_list
@@ -58,4 +57,3 @@ if __name__ == "__main__":
     cross_platform_sync.sync_data('google')
     cross_platform_sync.export_data('data.json')
     cross_platform_sync.import_data('data.json')
-```
