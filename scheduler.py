@@ -1,7 +1,9 @@
 import datetime
-from ai_assistant.zoom_invites import zoomInvite
-from ai_assistant.google_meets import googleMeet
-from ai_assistant.email_notifications import emailNotification
+# from ai_assistant.google_meets import googleMeet
+from zoom_invites import ZoomInvite
+# from ai_assistant.google_meets import googleMeet
+from google_meets import GoogleMeet
+from email_notifications import emailNotification
 
 class Scheduler:
     def __init__(self, user_profile, meeting_data):
@@ -11,9 +13,10 @@ class Scheduler:
     def schedule(self):
         for meeting in self.meeting_data:
             if meeting['platform'] == 'zoom':
-                zoomInvite(self.user_profile, meeting)
+                ZoomInvite(self.user_profile, meeting)
             elif meeting['platform'] == 'google_meet':
-                googleMeet(self.user_profile, meeting)
+                # googleMeet(self.user_profile, meeting)
+                GoogleMeet(self.user_profile, meeting)
             emailNotification(self.user_profile, meeting)
 
     def checkAvailability(self, start_time, end_time):

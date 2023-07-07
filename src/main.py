@@ -3,16 +3,17 @@ from ai_model import gpt4
 from email_handler import mime_handler
 from scheduler import google_calendar, microsoft_graph
 from integration import rest_api, graphql_api
-from frontend import react_app, vue_app
-from backend import node_app, django_app
+# from frontend import react_app.react_app, vue_app
+
+# from backend import node_app, django_app
 from microservices import service1, service2
-from docker import dockerfile1, dockerfile2
-from kubernetes import kube_config
+# from docker import dockerfile1, dockerfile2
+# from kubernetes import kube_config
 from security import encryption, oauth2
 from database import postgresql, mongodb
 from agile import scrum, kanban
 from testing import tdd, bdd
-from cicd import jenkinsfile, gitlab_ci
+# from cicd import jenkinsfile, gitlab_ci
 
 # Set up environment variables
 USER_EMAIL = os.getenv('USER_EMAIL')
@@ -34,23 +35,23 @@ rest_api = rest_api.RestAPI()
 graphql_api = graphql_api.GraphQLAPI()
 
 # Initialize front-end apps
-react_app = react_app.ReactApp()
-vue_app = vue_app.VueApp()
+# react_app = react_app.ReactApp()
+# vue_app = vue_app.VueApp()
 
 # Initialize back-end apps
-node_app = node_app.NodeApp(DB_CONNECTION)
-django_app = django_app.DjangoApp(DB_CONNECTION)
+# node_app = node_app.NodeApp(DB_CONNECTION)
+# django_app = django_app.DjangoApp(DB_CONNECTION)
 
 # Initialize microservices
 service1 = service1.Service1()
 service2 = service2.Service2()
 
 # Initialize Dockerfiles
-dockerfile1 = dockerfile1.Dockerfile1()
-dockerfile2 = dockerfile2.Dockerfile2()
+# dockerfile1 = dockerfile1.Dockerfile1()
+# dockerfile2 = dockerfile2.Dockerfile2()
 
 # Initialize Kubernetes config
-kube_config = kube_config.KubeConfig()
+# kube_config = kube_config.KubeConfig()
 
 # Initialize security modules
 encryption = encryption.Encryption()
@@ -69,8 +70,8 @@ tdd = tdd.TDD()
 bdd = bdd.BDD()
 
 # Initialize CI/CD pipelines
-jenkinsfile = jenkinsfile.Jenkinsfile()
-gitlab_ci = gitlab_ci.GitLabCI()
+# jenkinsfile = jenkinsfile.Jenkinsfile()
+# gitlab_ci = gitlab_ci.GitLabCI()
 
 # Start the main loop
 while True:
